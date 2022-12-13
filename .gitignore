@@ -1,0 +1,5 @@
+src/csharp/*.cs
+src/csharp/*.cxx
+build/
+src/csharp/obj
+src/csharp/bin
