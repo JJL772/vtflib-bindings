@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<Reference Include="VTFLibCS">
+			<HintPath>..\build\VTFLibCS.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	
+	<ItemGroup>
+		<ContentWithTargetPath Include="../build/VTFLibCS.*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<TargetPath>%(OutputDirectory)\%(Filename)%(Extension)</TargetPath>
+		</ContentWithTargetPath>
+	</ItemGroup>
+
+</Project>
