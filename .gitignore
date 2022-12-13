@@ -3,3 +3,6 @@ src/csharp/*.cxx
 build/
 src/csharp/obj
 src/csharp/bin
+.idea
+test/bin
+test/obj

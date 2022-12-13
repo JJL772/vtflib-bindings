@@ -21,6 +21,8 @@ swig_link_libraries(
 
 set_property(TARGET VTFLibCS PROPERTY SWIG_USE_TARGET_INCLUDE_DIRECTORIES TRUE)
 
+set_property(TARGET VTFLibCS PROPERTY SWIG_COMPILE_OPTIONS -namespace VTFLib)
+
 target_include_directories(
 	VTFLibCS PUBLIC
 
